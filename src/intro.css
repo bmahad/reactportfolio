@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Glory",sans-serif;
+}
+.i{
+    display: flex;
+    height: 100vh;
+    /* background-color: blueviolet; */
+}
+.i-left{
+    flex: 1;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i-right{
+    flex: 1;
+    position: relative;
+    /* background-color: brown; */
+}
+.i-left-wrapper{
+    padding: 50px;
+    height: 60%;
+    /* background-color: #59b256; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.i-intro{
+    font-size: 30px;
+    font-weight: 300;
+}
+.i-name{
+    font-size: 60px;
+    font-weight: 700;
+}
+.i-title-wrapper{
+    text-transform: capitalize;
+    height: 100%;
+    animation: move 3s ease-in-out infinite alternate;
+}
+@keyframes move {
+    25%{transform: translateY(-50px);}
+    50%{transform: translateY(-100px);}
+    75%{transform: translateY(-100px);}
+}
+.i-title{
+    height: 50px;
+    overflow: hidden;
+}
+.i-title-item{
+    height: 50px;
+    font-weight: bold;
+    color: #59b256;
+    font-size: 30px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.i-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 100%; */
+    position: absolute;
+}
+.i-bg{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-color: #59b256;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ....about css start...... */
+
+.a-about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.a-left{
+    flex: 1;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.a-right{
+    flex: 1;
+    /* background-color: blue; */
+}
+.a-card.bg{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #333;
+    background-image: url(./images/g2.png);
+}
+.a-card{
+    height: 70vh;
+    width: 60%;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.a-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.a-title{
+    font-weight: 700;
+}
+.a-desc{
+    font-size: 20px;
+    text-align: justify;
+    /* padding-right: 30px; */
+}
+
+/* .....product css......... */
+
+.pl{
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.pl-text{
+    width: 65%;
+}
+.pl-title{
+    font-weight: 700;
+    font-size: 40px;
+}
+.pl-desc{
+    margin: 20px 0px;
+}
+.p-card{
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    border: 2px solid rgb(243,242,242);
+}
+.pl-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.p-browser{
+    height: 20px;
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 99;
+}
+.p-circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 3px;
+}
+.p-image{
+    width: 100%;
+    transition: all 10s ease;
+}
+.p-card:hover .p-image{
+    transform: translateY(-100%);
+}
+/* .....contact......... */
+.contact{
+    height: 100vh;
+    position: relative;
+}
+.bg-contact{
+    width: 20px;
+    height: 100%;
+    background-color: #59b256;
+    position: absolute;
+}
+.c-icon{
+    width: 40px;
+    height: 40px;
+}
+.side-color{
+    border: 2px solid #59b256;
+    border-width: 20px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    /* border-width: 2px; */
+}
+.c-touch{
+    font-weight: 700;
+}
+.custom-border{
+    text-align: center;
+    border-bottom-width: 2px;
+    border-top: 0px;
+    border-radius: 0px;
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border-bottom: 1px solid black !important;
+}
+.custom-text-border{
+    text-align: center;
+    border-bottom-width: 2px;
+    border-top: 1px solid black !important;
+    border-radius: 1px;
+    border-right: 1px solid black !important;
+    border-left: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+}
+.custom-btn{
+    padding: 12px 50px;
+    background-color: yellow;
+    border-radius: 5px;
+    border-color: white;
+    box-shadow: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-style: none;
+}
+.custom-btn:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+.custom-fluid{
+    border-radius: 20%;
+    width: 40%;
+    height: 15vh;
+    margin: auto;
+}
+.custom-text-slider{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+@media(min-width:700px) and (max-width:992px){
+    .pl {
+        padding: 0px 20px;
+        margin-top: 5rem;
+    }
+}
+@media(min-width:585px) and (max-width:699px){
+    .p-card{
+        width: 46%;
+    }
+}
+@media(min-width:477px) and (max-width:699px){
+    .pl{
+        margin-top: 2rem;
+    }
+}
+@media(min-width:389px) and (max-width:476px){
+    .pl{
+        margin-top: 2rem;
+    }
+}
+@media(max-width:388px){
+    .pl{
+        margin-top: 2rem;
+    }
+}
+@media(max-width:584px){
+    .p-card{
+        width: 100%;
+    }
+}
+@media(max-width:992px){
+    .a-about{
+        flex-direction: column;
+    }
+    .a-right{
+        text-align: center;
+        margin-top: 4rem;
+    }
+}
+@media(max-width:768px){
+    .i{
+        flex-direction: column;
+    }
+    .i-img{
+        object-fit: contain;
+    }
+}
+@media(max-width:768px){
+    .i-left-wrapper{
+        padding: 23px;
+        height: 100%;
+    }
+    .i-title-item{
+        justify-content: center;
+    }
+    .i-left{
+        text-align: center;
+    }
+}
+@media(max-width:600px){
+    .i-name{
+        font-size: 50px;
+    }
+}
+@media(max-width:430px){
+    .i-name{
+        font-size: 40px;
+    }
+    .i-title-item{
+        font-size: 25px;
+    }
+}
+@media(max-width:360px){
+    .i-intro{
+        font-size: 25px;
+    }
+    .i-name{
+        font-size: 35px;
+    }
+}
+@media(max-width:340px){
+    .i-title-item{
+        font-size: 20px;
+    }
+}
+@media(max-width:320px){
+    .i-name {
+        font-size: 30px;
+    }
+    .i-intro {
+        font-size: 20px;
+    }
+}
+@media(min-width:817px) and (max-width:992px){
+    .c-touch {
+        /* font-weight: 700; */
+        font-size: 30px;
+    }
+}
+@media(min-width:768px) and (max-width:816px){
+    .c-touch {
+        /* font-weight: 700; */
+        font-size: 26px;
+    }
+}
+@media(min-width:671px) and (max-width:826px)
+{
+    .pl-title{
+        font-size: 30px;
+    }
+}
+@media(min-width:371px) and (max-width:670px)
+{
+    .pl-title{
+        font-size: 33px;
+    }
+}
+@media(min-width:1024px){
+    .a-desc{
+        padding-right: 22px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .custom-m-t{
+        margin-top: 16rem;
+    }
+}
+@media(min-width:550px) and (max-width:767px){
+    .custom-m-t{
+        margin-top: 20rem;
+    }
+}
+@media(min-width:550px) and (max-width:767px){
+    .custom-fluid{
+        width: 22%;
+    }
+}
+@media(max-width:549px){
+    .custom-m-t{
+        margin-top: 22rem;
+    }
+    .custom-fluid{
+        width: 22%;
+    }
+}
+@media(max-width:440px){
+    .custom-m-t{
+        margin-top: 25rem;
+    }
+}
+@media(max-width:380px){
+    .custom-m-t{
+        margin-top: 28rem;
+    }
+}
+@media(max-width:350px){
+    .custom-m-t{
+        margin-top: 32rem;
+    }
+}
+@media(min-width:992px){
+    .i-name{
+        font-size: 50px;
+    }
+}
+@media(min-width:880px)and (max-width:992px){
+    .i-name{
+        font-size: 40px;
+    }
+    .i-title-item{
+        font-size: 22px;
+    }
+}
+@media(min-width:768px) and (max-width:992){
+    .i-name{
+        font-size: 30px;
+    }
+    .i-title-item{
+        font-size: 16px;
+    }
+}
+@media(min-width:250px) and (max-width:370){
+    .pl-title{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+

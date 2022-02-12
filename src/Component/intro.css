@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+i{
+    display: flex;
+    height: 100vh;
+    background-color: blueviolet;
+}
+.i-left{
+    flex: 1;
+}
+.i-right{
+    flex: 1;
+}
